@@ -122,7 +122,7 @@ public class UnderLineRadioBtn extends AppCompatRadioButton {
         // 线的高度小于、等于0，不绘制线了
         if (mLineHeight <= 0)
             return;
-        if (mLineWidth <= 0 && mLineWidth == 1) {
+        if (mLineWidth <= 0 || mLineWidth == 1) {
             //这里说明用户没有手动设置宽度或者是设置了百分比为1，那么就将其设置为控件本身的宽度
             mLineWidth = mWidth;
         } else if (mLineWidth < 1) {
