@@ -27,10 +27,11 @@ public class UnderLineRadioBtn extends AppCompatRadioButton {
     private int   mWidth, mHeight;
     // 如果没有Button的情况下，线会合文字贴在一起，这里可以加一点空隙
     private       float mSpaceHeight       = 0f;
+    private final int   COLOR_202020       = Color.parseColor("#202020");
     // 内部的默认状态文字、下划线颜色
-    private final int   DEFAULT_TEXT_COLOR = Color.parseColor("#202020"), DEFAULT_LINE_COLOR = Color.parseColor("#202020");
+    private final int   DEFAULT_TEXT_COLOR = COLOR_202020, DEFAULT_LINE_COLOR = COLOR_202020;
     // 内部的选中状态文字、下划线颜色
-    private final int CHECK_TEXT_COLOR = Color.parseColor("#202020"), CHECK_LINE_COLOR = Color.parseColor("#ff1819");
+    private final int CHECK_TEXT_COLOR = COLOR_202020, CHECK_LINE_COLOR = Color.parseColor("#ff1819");
     /*-------------内部需要使用的值-------------*/
 
     /*-------------来自外部传入的值-------------*/
