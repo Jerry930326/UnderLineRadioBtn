@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UnderLineRadioBtn">
+        <!--线相关-->
+        <attr name="lineH" format="dimension"/>
+        <attr name="lineW" format="float|dimension"/>
+        <attr name="lineCheckColor" format="color"/>
+        <attr name="lineDefaultColor" format="color"/>
+        <attr name="lineRadius" format="dimension"/>
+        <!--文字相关-->
+        <attr name="textCheckColor" format="color"/>
+        <attr name="textDefaultColor" format="color"/>
+    </declare-styleable>
+</resources>

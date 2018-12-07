@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UnderLineRadioBtn"><attr format="dimension" name="lineH"/><attr format="float|dimension" name="lineW"/><attr format="color" name="lineCheckColor"/><attr format="color" name="lineDefaultColor"/><attr format="dimension" name="lineRadius"/><attr format="color" name="textCheckColor"/><attr format="color" name="textDefaultColor"/></declare-styleable>
+    <string name="app_name">UnderLineRadioBtnLib</string>
+</resources>
