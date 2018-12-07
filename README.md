@@ -14,12 +14,12 @@
   <tr>
     <td>lineH</td>
     <td>dimension</td>
-    <td>线的高度(0则没有线)</td>
+    <td>线的高度(0或不设置则没有线)</td>
   </tr>
   <tr>
     <td>lineW</td>
     <td>float|dimension</td>
-    <td>线的宽度(float为百分比:例如0.5代表RadioButton的1/2宽)</td>
+    <td>线的宽度(float为百分比:例如0.5代表RadioButton的1/2宽，默认为RadioButton的宽度)</td>
   </tr>
   <tr>
     <td>lineCheckColor</td>
