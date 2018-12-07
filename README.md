@@ -1,9 +1,9 @@
-# UnderLineRadioBtn
+## UnderLineRadioBtn
 [![](https://jitpack.io/v/Jerry930326/UnderLineRadioBtn.svg)](https://jitpack.io/#Jerry930326/UnderLineRadioBtn)
 
 这是一个带有下划线的自定义RadioButton
 
-# 项目简介：
+## 项目简介：
 <h4> 自定义属性 </h4>
 <table>
   <tr>
@@ -48,7 +48,7 @@
   </tr>
   </table>
 
-# 使用方式：
+## 使用方式：
 <h4> Step 1：添加依赖 </h4>
 在Project目录的build.gradle下添加:
 
@@ -84,6 +84,9 @@ implementation 'com.github.Jerry930326:UnderLineRadioBtn:latest.release'
     app:lineRadius="5dp"
     app:lineW="0.5" />
 ```
+
+## 示例图片：
+![image](https://github.com/Jerry930326/UnderLineRadioBtn/blob/1d5b21c95f20e34db7410664faf18ce27ff3bbaf/images/demo.png)
 
 ## License
 
