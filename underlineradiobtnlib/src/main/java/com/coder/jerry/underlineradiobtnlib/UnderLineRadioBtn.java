@@ -28,17 +28,18 @@ public class UnderLineRadioBtn extends AppCompatRadioButton {
     // 如果没有Button的情况下，线会合文字贴在一起，这里可以加一点空隙
     private       float mSpaceHeight       = 0f;
     private final int   COLOR_202020       = Color.parseColor("#202020");
+    private final int   COLOR_FF1819       = Color.parseColor("#FF1819");
     // 内部的默认状态文字、下划线颜色
     private final int   DEFAULT_TEXT_COLOR = COLOR_202020, DEFAULT_LINE_COLOR = COLOR_202020;
     // 内部的选中状态文字、下划线颜色
-    private final int CHECK_TEXT_COLOR = COLOR_202020, CHECK_LINE_COLOR = Color.parseColor("#ff1819");
+    private final int CHECK_TEXT_COLOR = COLOR_FF1819, CHECK_LINE_COLOR = COLOR_FF1819;
     /*-------------内部需要使用的值-------------*/
 
     /*-------------来自外部传入的值-------------*/
     // 线的宽度、高度
     private float mLineWidth, mLineHeight;
     // 文字和下划线的默认颜色、选中状态颜色
-    private int mTextDefaultColor = -0x001, mTextCheckColor = -0x001, mLineDefaultColor, mLineCheckColor;
+    private int mTextDefaultColor = -0x001, mTextCheckColor = -0x001, mLineDefaultColor = -0x001, mLineCheckColor = -0x001;
     // 下划线的圆角
     private float mLineRadius;
     private @SuppressLint("DrawAllocation")
@@ -80,7 +81,7 @@ public class UnderLineRadioBtn extends AppCompatRadioButton {
             mLineWidth = typedArray.getFloat(R.styleable.UnderLineRadioBtn_lineW, 0f);
         }
         mLineHeight = typedArray.getDimension(R.styleable.UnderLineRadioBtn_lineH, 0f);
-        //如果没有给文字设置颜色
+
         mTextDefaultColor = typedArray.getColor(R.styleable.UnderLineRadioBtn_textDefaultColor, DEFAULT_TEXT_COLOR);
         mTextCheckColor = typedArray.getColor(R.styleable.UnderLineRadioBtn_textCheckColor, CHECK_TEXT_COLOR);
         mLineDefaultColor = typedArray.getColor(R.styleable.UnderLineRadioBtn_lineDefaultColor, DEFAULT_LINE_COLOR);
