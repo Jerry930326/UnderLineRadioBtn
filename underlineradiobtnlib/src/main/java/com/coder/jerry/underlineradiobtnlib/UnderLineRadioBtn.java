@@ -158,6 +158,82 @@ public class UnderLineRadioBtn extends AppCompatRadioButton {
         }
     }
 
+    /**
+     * 设置下划线的圆角
+     */
+    public void setLineRadius(float LineRadius) {
+        mLineRadius = LineRadius;
+        postInvalidate();
+    }
+
+    /**
+     * 设置下划线的默认/选中颜色
+     *
+     * @param LineDefaultColor 下划线默认颜色
+     * @param LineCheckColor   下划线选中颜色
+     */
+    public void setLineColor(int LineDefaultColor, int LineCheckColor) {
+        mLineDefaultColor = LineDefaultColor;
+        mLineCheckColor = LineCheckColor;
+        postInvalidate();
+    }
+
+    /**
+     * 设置下划线的选中颜色
+     */
+    public void setLineCheckColor(int LineCheckColor) {
+        setLineColor(mLineDefaultColor, LineCheckColor);
+    }
+
+    /**
+     * 设置下划线的默认颜色
+     */
+    public void setLineDefaultColor(int LineDefaultColor) {
+        setLineColor(LineDefaultColor, mLineCheckColor);
+    }
+
+    /**
+     * 设置文字的默认/选中颜色
+     *
+     * @param TextDefaultColor 文字默认颜色
+     * @param TextCheckColor   文字选中颜色
+     */
+    public void setTextColor(int TextDefaultColor, int TextCheckColor) {
+        mTextDefaultColor = TextDefaultColor;
+        mTextCheckColor = TextCheckColor;
+        postInvalidate();
+    }
+
+    /**
+     * 设置文字的选中颜色
+     */
+    public void setTextCheckColor(int TextCheckColor) {
+        setTextColor(mTextDefaultColor, TextCheckColor);
+    }
+
+    /**
+     * 设置文字的默认颜色
+     */
+    public void setTextDefaultColor(int TextDefaultColor) {
+        setTextColor(TextDefaultColor, mTextCheckColor);
+    }
+
+    /**
+     * 设置线的宽度
+     */
+    public void setLineWidth(float lineWidth) {
+        mLineWidth = lineWidth;
+        postInvalidate();
+    }
+
+    /**
+     * 设置线的高度
+     */
+    public void setLineHeight(float lineHeight) {
+        mLineHeight = lineHeight;
+        postInvalidate();
+    }
+
     @Override
     public void setChecked(boolean checked) {
         super.setChecked(checked);
